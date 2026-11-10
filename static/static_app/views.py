@@ -8,8 +8,8 @@ class NoteViewSet(viewsets.ModelViewSet):
     queryset = Note.objects.all()
     serializer_class = NoteSerializer
 
-def root(request):
-    return HttpResponse("<p>Hello everyone</p>")
+# def root(request):
+#     return HttpResponse("<p>Hello everyone</p>")
 
-def me(request):
-    return HttpResponse("<p>Sultanova 67</p>")
+# def me(request):
+#     return HttpResponse("<p>Sultanova 67</p>")

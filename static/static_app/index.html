@@ -11,10 +11,11 @@
     <script async="True">
         const teg_p = document.getElementById("data_p")
        const getData = async () => {
-        await fetch("https://127.0.0.1:8000/api/notes/1/")
+        const data = await fetch("http://127.0.0.1:8000/notes/3/")
         .then(response => response.json())
-        return data
+        return data.text
        }
+       getData().then(response => teg_p.textContent = response)
     </script>
 </body>
 </html>
